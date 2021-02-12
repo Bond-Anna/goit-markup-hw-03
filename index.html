@@ -66,22 +66,22 @@
         <!-- Чем мы занимаемся -->
         <section>
             <div class="container">
-            <h2 class="title">Чем мы занимаемся</h2>
-            <ul>
-                <li><img src="./images/img-3.jpg" alt="набор кода" width="300"></li>
-                <li><img src="./images/img-2.jpg" alt="мобильное приложение" width="300"></li>
-                <li><img src="./images/img.jpg" alt="спектр цветов" width="300"></li>
-            </ul>
+                <h2 class="title">Чем мы занимаемся</h2>
+                <ul class="title-list">
+                    <li class="list-item"><img src="./images/img-3.jpg" alt="набор кода" width="370"></li>
+                    <li class="list-item"><img src="./images/img-2.jpg" alt="мобильное приложение" width="370"></li>
+                    <li class="list-item"><img src="./images/img.jpg" alt="спектр цветов" width="370"></li>
+                </ul>
             </div>
         </section>
         <!-- Наша команда -->
         <section class="team">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
-                <ul>
+                <ul class="title-list">
                     <li>
-                        <ul>
-                            <li><img src="./images/img-4.jpg" alt="Игорь Демьяненко" width="200"></li>
+                        <ul class="team-item">
+                            <li><img src="./images/img-4.jpg" alt="Игорь Демьяненко" width="270"></li>
                             <li>
                                 <h3 class="name">Игорь Демьяненко</h3>
                             </li>
@@ -89,8 +89,8 @@
                         </ul>
                     </li>
                     <li>
-                        <ul>
-                            <li><img src="./images/img-5.jpg" alt="Ольга Репина" width="200"></li>
+                        <ul class="team-item">
+                            <li><img src="./images/img-5.jpg" alt="Ольга Репина" width="270"></li>
                             <li>
                                 <h3 class="name">Ольга Репина</h3>
                             </li>
@@ -98,8 +98,8 @@
                         </ul>
                     </li>
                     <li>
-                        <ul>
-                            <li><img src="./images/img-6.jpg" alt="Николай Тарасов" width="200"></li>
+                        <ul class="team-item">
+                            <li><img src="./images/img-6.jpg" alt="Николай Тарасов" width="270"></li>
                             <li>
                                 <h3 class="name">Николай Тарасов</h3>
                             </li>
@@ -107,8 +107,8 @@
                         </ul>
                     </li>
                     <li>
-                        <ul>
-                            <li><img src="./images/img-7.jpg" alt="Михаил Ермаков" width="200"></li>
+                        <ul class="team-item">
+                            <li><img src="./images/img-7.jpg" alt="Михаил Ермаков" width="270"></li>
                             <li>
                                 <h3 class="name">Михаил Ермаков</h3>
                             </li>
@@ -120,12 +120,21 @@
         </section>
     </main>
     <footer>
-        <address>
-            <a class="logo" href="/"><span class="accent">Web</span><span class="white">Studio</span></a>
-            <p class="white">г. Киев, пр-т Леси Украинки, 26</p>
-            <p><a href="mailto:info@example.com" class="down-contacts">info@example.com</a></p>
-            <p><a href="tel:+380991111111" class="down-contacts">+38 099 111 11 11</a></p>
-        </address>
+        <div class="container">
+            <address class="down">
+                <a class="logo" href="/"><span class="accent">Web</span><span class="white">Studio</span></a>
+                <ul class="down-address">
+                    <li>
+                        <p class="white">г. Киев, пр-т Леси Украинки, 26</p></li>
+                    <li>
+                        <p><a href="mailto:info@example.com" class="down-contacts">info@example.com</a></p>
+                    </li>
+                    <li>
+                        <p><a href="tel:+380991111111" class="down-contacts">+38 099 111 11 11</a></p>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 
