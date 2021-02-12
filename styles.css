@@ -3,20 +3,51 @@
   --text-main: #757575;
   --text-white: #ffffff;
   --text-footer: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196F3;
+}
+
+.container {
+  outline: 2px solid tomato;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0 15px;
 }
 
 .accent {
   color: #2196F3;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  border-bottom: 1px solid #ECECEC;
+}
 .top .logo, 
 .top .link {
   color: var(--text-title);
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.03em;
+.flex, .top, .top-ul, .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -25,6 +56,13 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+
+  margin-right: 93px;
+}
+
+.top-ul li:not(:last-child),
+.nav li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .link {
@@ -49,18 +87,11 @@ body {
   text-decoration: none;
 }
 
-button.white {  
-  color: var(--text-white);
-  background: #2196F3;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-}
-
+/* Hero */
 .hero {
   background: #2F303A;
+  text-align: center;
 }
 
 .white-title {
@@ -69,11 +100,32 @@ button.white {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
+button.white {  
+  color: var(--text-white);
+  background: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  min-width: 200px;
+  margin-bottom: 200px;
+  
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Portfolio btns */
 .btns {
   color: var(--text-title);
   background: #F5F4FA;
@@ -89,6 +141,16 @@ button.white {
   color: #ffffff;
 }
 
+/* Особенности */
+.features-list {
+  display: flex;
+  padding: 94px 0;
+}
+
+.features-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features h3 {
   color: var(--text-title);
 
@@ -96,6 +158,8 @@ button.white {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
 .features p {
@@ -103,8 +167,12 @@ button.white {
 
   font-size: 14px;
   line-height: 1.7;
+
+  box-sizing: inherit;
+  margin: 0px;
 }
 
+/* Чем мы занимаемся */
 .title {
   color: var(--text-title);
 
